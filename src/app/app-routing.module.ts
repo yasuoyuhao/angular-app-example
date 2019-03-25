@@ -16,7 +16,7 @@ import { environment } from 'environments/environment';
 const routes: Routes = [
   {
     path: 'login',
-    canActivate: [ReversalAuthGuard],
+    // canActivate: [ReversalAuthGuard],
     component: LoginComponent,
     data: {
       title: 'Login'
@@ -30,7 +30,7 @@ const routes: Routes = [
   {
     path: '',
     component: MainComponent,
-    canActivate: [AuthGuard],
+    // canActivate: [AuthGuard],
     // canActivateChild: [AuthGuard],
     children: [
       {
